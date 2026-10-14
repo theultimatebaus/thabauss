@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101114">
+    <title>THA BAUSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: dark;
+        background: #101114;
+        font-family: "Bungee", Impact, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: grid;
+        min-height: 100vh;
+        min-height: 100svh;
+        margin: 0;
+        place-items: center;
+        overflow: hidden;
+        background-color: #101114;
+        background-image: radial-gradient(#ffffff12 1px, transparent 1px);
+        background-size: 24px 24px;
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0.2em;
+        color: #ff3038;
+        font-size: 7rem;
+        line-height: 1.1;
+        text-align: center;
+        text-wrap: balance;
+        animation: color-flash 2.4s steps(1, end) infinite;
+      }
+
+      @keyframes color-flash {
+        0%, 100% {
+          color: #ff3038;
+          text-shadow: 0 0 24px #ff303899;
+        }
+        33% {
+          color: #2587ff;
+          text-shadow: 0 0 24px #2587ff99;
+        }
+        66% {
+          color: #45f477;
+          text-shadow: 0 0 24px #45f47799;
+        }
+      }
+
+      @media (max-width: 640px) {
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        h1 {
+          animation: none;
+          color: #45f477;
+          text-shadow: 0 0 24px #45f47799;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>THA BAUSS</h1>
+    </main>
+  </body>
+</html>
